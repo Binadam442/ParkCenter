@@ -139,24 +139,56 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-       {/* Testimonials */}
-        <section className="py-16 container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Visitor Reviews</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { quote: "Best football pitch in town!", author: "Al-amin" },
-              { quote: "The cafe's smoothies are amazing.", author: "David" },
-              { quote: "Clean and modern car wash.", author: "Musa" },
-            ].map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                <p className="text-gray-600 italic mb-4">"{item.quote}"</p>
-                <p className="font-semibold">— {item.author}</p>
-              </div>
-            ))}
+{/* Testimonials Section with Images */}
+<section className="py-16 container mx-auto px-4">
+  <h2 className="text-3xl font-bold text-center mb-12">Visitor Reviews</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {[
+      { 
+        quote: "Best football pitch in town!", 
+        author: "Al-amin",
+        image: "/images/Censad5.jpeg", // Add your image path
+        role: "Football Coach" // Optional role/title
+      },
+      { 
+        quote: "The cafe's smoothies are amazing.", 
+        author: "David",
+        image: "/images/testimonials/david.jpg",
+        role: "Regular Customer"
+      },
+      { 
+        quote: "Clean and modern car wash.", 
+        author: "Musa",
+        image: "/images/testimonials/musa.jpg",
+        role: "Car Owner"
+      },
+    ].map((item, index) => (
+      <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+        {/* Testimonial Text */}
+        <p className="text-gray-600 italic mb-6">"{item.quote}"</p>
+        
+        {/* Author Info with Image */}
+        <div className="flex items-center">
+          <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4 border-2 border-amber-500">
+            <Image
+              src={item.image}
+              alt={`${item.author}'s profile`}
+              width={100}
+              height={100}
+              className="object-cover"
+            />
           </div>
-        </section>
-
+          <div>
+            <p className="font-semibold text-gray-800">{item.author}</p>
+            {item.role && (
+              <p className="text-sm text-gray-500">{item.role}</p>
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
         {/* Booking Form Modal */}
         {showBookingForm && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
