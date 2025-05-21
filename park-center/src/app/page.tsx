@@ -1,4 +1,4 @@
-'use client'; // Add this for interactivity
+   'use client'; // Add this for interactivity
 
 import { useState } from 'react';
 import Link from 'next/link';
