@@ -66,21 +66,21 @@ export default function Home() {
           <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2 grid grid-cols-2 gap-4">
               <Image 
-                src="/Censad1.jpeg" 
+                src="/images/Censad1.jpeg" 
                 alt="Park Cafe" 
                 width={500}
                 height={300}
                 className="rounded-lg shadow-xl w-full h-auto"
               />
               <Image 
-                src="/Censad6.jpeg" 
+                src="/images/Censad8.jpeg" 
                 alt="Park Cafe" 
                 width={500}
                 height={300}
                 className="rounded-lg shadow-xl w-full h-auto"
               />
               <Image 
-                src="/censad2.jpeg" 
+                src="/images/censad2.jpeg" 
                 alt="Park Cafe" 
                 width={500}
                 height={300}
@@ -91,14 +91,14 @@ export default function Home() {
             <div className="md:w-1/2 space-y-6">
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <Image 
-                  src="/censad5.jpeg" 
+                  src="/images/censad5.jpeg" 
                   alt="Park Cafe" 
                   width={500}
                   height={300}
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
                 <Image 
-                  src="/censad6.jpeg" 
+                  src="/images/censad6.jpeg" 
                   alt="Park Cafe" 
                   width={500}
                   height={300}
@@ -112,7 +112,7 @@ export default function Home() {
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
                 <Image 
-                src="/Censad1.jpeg" 
+                src="/images/Censad1.jpeg" 
                 alt="Park Cafe" 
                 width={500}
                 height={300}
