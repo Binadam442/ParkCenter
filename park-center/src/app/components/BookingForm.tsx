@@ -47,7 +47,6 @@ export default function BookingForm() {
           </div>
         </div>
       </div>
-
       {/* Contact Compact */}
       <div className="bg-green-50 p-3 rounded-lg">
         <div className="flex items-center">
