@@ -1,8 +1,13 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
-  output: 'standalone', // Recommended for Netlify
+  output: 'standalone', // Required for Netlify
   images: {
-    unoptimized: true, // Disable Image Optimization API if not needed
+    unoptimized: true, // Disable if not using Next.js Image Optimization
+  },
+  // Add if using internationalization
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
   },
 };
 
