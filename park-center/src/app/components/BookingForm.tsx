@@ -18,7 +18,7 @@ export default function BookingForm() {
         <div className="flex items-center">
           <FaWhatsapp className="text-green-600 mr-2" />
           <div>
-            <h3 className="font-bold">Football Pitch Booking</h3>
+            <h3 className="font-bold"> Booking session</h3>
             <p className="font-medium my-1">Contact: {contactNumber}</p>
             <div className="flex gap-3 mt-2">
               <a href={`https://wa.me/${contactNumber}`} className="text-green-700 font-medium flex items-center">
@@ -53,7 +53,7 @@ export default function BookingForm() {
       {/* Final Note */}
       <p className="text-xs text-gray-600 text-center">
         <FaInfoCircle className="inline mr-1" />
-        Available slots: Weekdays 4PM-9PM, Weekends 8AM-9PM
+        Available slots: Weekdays and  Weekends
       </p>
     </div>
   );
