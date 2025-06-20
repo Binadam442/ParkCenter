@@ -17,20 +17,22 @@ export default function Home() {
       
       <main>
         {/* Hero Section */}
-        <section className="relative h-[80vh] bg-[url('/images/park-hero.jpg')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-[url(/images/Censad11.jpeg)] bg-opacity-40 flex items-center justify-center">
-            <div className="text-center text-green px-4 pb-60">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Cen Sad Park</h1>
-              <p className="text-xl mb-8">Sports, Car wash, Dining, and Relaxation in One Place</p>
-              <button 
-                onClick={() => setShowBookingForm(true)}
-                className="bg-amber-600 hover:bg-green-700 text-green px-6 py-3 rounded-lg text-lg font-semibold transition"
-              >
-                Book a Facility
-              </button>
-            </div>
-          </div>
-        </section>
+       <section className="relative h-[60vh] md:h-[80vh] bg-[url('/images/park-hero.jpg')] bg-cover bg-center">
+  <div className="absolute inset-0 bg-[url(/images/Censad11.jpeg)] bg-opacity-40 flex items-center justify-center">
+    <div className="text-center text-green px-4 pb-20 md:pb-60">
+      <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-2 md:mb-4">Welcome to Cen Sad Park</h1>
+      <p className="text-base sm:text-xl mb-4 md:mb-8 max-w-md mx-auto">
+        Sports, Car wash, Dining, and Relaxation in One Place
+      </p>
+      <button 
+        onClick={() => setShowBookingForm(true)}
+        className="bg-amber-600 hover:bg-green-700 text-green px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition"
+      >
+        Book a Facility
+      </button>
+    </div>
+  </div>
+</section>
 
         {/* Facilities Section - NEW */}
         <section className="py-16 container mx-auto px-4">
