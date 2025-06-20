@@ -1,6 +1,12 @@
+# netlify.toml
 [build]
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = ".next"
+  functions = ".next/serverless"
+
+[context.production.environment]
+  NEXT_TELEMETRY_DISABLED = "1"
+  NODE_VERSION = "18.16.0"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
