@@ -1,14 +1,10 @@
-// next.config.js
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone', // Required for Netlify
+  output: 'standalone', // Keep if needed for Vercel
   images: {
-    unoptimized: true, // Disable if not using Next.js Image Optimization
+    unoptimized: true, // Keep if needed
   },
-  // Add if using internationalization
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
+  // Remove the i18n configuration completely
 };
 
 module.exports = nextConfig;
